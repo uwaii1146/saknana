@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+body{
+   overflow-x: hidden;
+   width: 1360px;
+   height: 0;
+   display: block;
+}
+.a{ 
+   justify-content: space-around;
+   display: flex;
+   background-color: #e3efff;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+   padding: 100px;
+}
+.c{
+   text-align: center;
+}
+.you{
+   background-color: #e3efff;
+   padding: 150px;
+   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+   justify-content: space-between;
+}
+.u2{
+   width: calc(100%/2);
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   width: 1000px;
+}
+h1{
+   font-size: 60px;
+   top: 100px;
+   font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+h3,h4{
+   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+   text-align: center;
+   line-height: 60px;
+}
+h4{
+   line-height: 25px;
+}
+p{
+   margin: 10px 100px 0 100px;
+   line-height: 30px;
+   font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+iframe{
+   width: 510px;
+   justify-content:space-between;
+   height: 360px;
+   padding: 1px;
+}
+
+@media screen and (max-width:960px){
+   /*960px以上に適用されるCSS（PC用）*/
+}
+   /*480px以下に適用されるCSS（スマホ用）*/
+@media (max-width:480px){
+body{
+   width: 480px;
+}
+   img{
+   width: 100%;
+   height: 0;
+}
+}
